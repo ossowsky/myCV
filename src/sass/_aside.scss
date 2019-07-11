@@ -1,9 +1,11 @@
 .aside {
   width: 350px;
+  max-width: 350px;
   background-color: darkblue;
   display: flex;
   flex-direction: column;
   color: #fff;
+  padding: 10px;
 }
 
 aside .section {

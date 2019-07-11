@@ -4,11 +4,12 @@
   color: #fff;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .header__logo {
   display: flex;
-  padding: 10px;
 
   img {
     height: 144px;
