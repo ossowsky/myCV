@@ -1,0 +1,17 @@
+.aside {
+  width: 350px;
+  background-color: darkblue;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+aside .section {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
