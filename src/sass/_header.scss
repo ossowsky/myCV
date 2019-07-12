@@ -1,6 +1,6 @@
 .header {
   align-items: center; // align-items because flex-direction: column;
-  background-color: darkslateblue;
+  background-color: #00003F;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -22,4 +22,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  &__h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
+  }
+
+  &__h3 {
+    color: #F0DB4F;
+  }
 }

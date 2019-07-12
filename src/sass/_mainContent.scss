@@ -1,12 +1,23 @@
 .main {
-  background-color: yellow;
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
 
 main .section {
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+}
+
+.container {
+  background-color: #FFFFF0;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.capitalize {
+  text-transform: uppercase;
 }
