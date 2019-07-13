@@ -4,3 +4,12 @@
   margin: 0; 
   padding: 0;
 }
+
+.content {
+  display: flex;
+
+  &--column{
+    flex-direction: column;
+    width: calc(100% - 350px);
+  }
+}

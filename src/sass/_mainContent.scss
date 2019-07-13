@@ -1,23 +1,26 @@
 .main {
   display: flex;
   flex-direction: column;
-  padding: 10px;
-}
 
-main .section {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
+  &__section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;  
+  }
 }
 
 .container {
   background-color: #FFFFF0;
 }
 
-.underline {
-  text-decoration: underline;
+.section__title {
+  border-bottom: 1px solid black;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
 }
 
-.capitalize {
-  text-transform: uppercase;
+.underline {
+  text-decoration: underline;
 }

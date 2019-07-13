@@ -6,11 +6,11 @@
   max-width: 350px;
   padding: 10px;
   width: 350px;
-}
 
-aside .section {
-  display: flex;
-  flex-direction: column;
+  &__section {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 a {
