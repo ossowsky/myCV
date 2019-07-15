@@ -1,3 +1,6 @@
+@import './mixins';
+
+
 .aside {
   background-color: #00003F;
   color: #FFF;
@@ -6,7 +9,7 @@
   max-width: 350px;
   padding: 10px;
   width: 350px;
-
+    
   &__section {
     display: flex;
     flex-direction: column;
@@ -20,4 +23,11 @@ a {
 
 .capitalize {
   text-transform: uppercase;
+}
+.capitalize {
+  text-transform: uppercase;
+}
+
+ul {
+  @include reset-ul();
 }

@@ -1,6 +1,8 @@
 .footer {
   color: #808080;
-  font-size: 10px;
-  font-style: italic;
+  font: {
+    size: 10px;
+    style: italic;
+  }
   padding: 10px;
 }
