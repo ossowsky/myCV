@@ -9,25 +9,24 @@
   max-width: 350px;
   padding: 10px;
   width: 350px;
-    
-  &__section {
+
+  .section {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+
+    &__title {
+      padding: 5px 0;
+      text-transform: uppercase;  
+    }
+
+    &__list {
+      @include reset-ul();
+    }
+
+    &__link {
+      color: #FFF;
+      text-decoration: none;
+    }
   }
-}
-
-a {
-  color: #FFF;
-  text-decoration: none;
-}
-
-.capitalize {
-  text-transform: uppercase;
-}
-.capitalize {
-  text-transform: uppercase;
-}
-
-ul {
-  @include reset-ul();
 }

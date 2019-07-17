@@ -1,34 +1,27 @@
 .header {
   align-items: center; // align-items because flex-direction: column;
   background-color: #00003F;
-  color: #fff;
+  color: #FFF;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
   padding: 10px;
-}
 
-.header__logo {
-  display: flex;
-
-  img {
+  &__image {
     height: 144px;
     width: 144px;
   }
-}
 
-.hgroup {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  &__name {
+    text-align: center;
 
-  &__h1 {
-    font-size: 42px;
-    letter-spacing: 4px;
-  }
+    &--large {
+      font-size: 45px;
+      letter-spacing: 4px;
+    }
 
-  &__h3 {
-    color: #F0DB4F;
-  }
+    &--yellow {
+      color: #F0DB4F;
+    }
+  }  
 }
