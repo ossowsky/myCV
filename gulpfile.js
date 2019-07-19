@@ -2,6 +2,8 @@ const gulp = require("gulp");
 const sass = require("gulp-sass");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
+const autoprefixer = require("gulp-autoprefixer");
+const sourcemaps = require('gulp-sourcemaps');
 
 /*
 --- TOP LEVEL FUNCTIONS ---
@@ -15,6 +17,19 @@ const del = require("del");
 //   return console.log("Gulp is running...");
 // });
 
+// PREFIXES
+
+// gulp.task('addPrefixes', function(){
+//   return gulp.src('./src/sass/**/*.scss')
+//         .pipe(autoprefixer(
+//           {
+//             browsers: ['last 2 versions'],
+//             cascade: false
+//         }
+//         ))
+//         .pipe(gulp.dest('./dist/css'))
+// });
+
 gulp.task("copyHtml", function(){
   return gulp.src("src/*.html")
     .pipe(gulp.dest("dist"));
@@ -22,7 +37,15 @@ gulp.task("copyHtml", function(){
 
 gulp.task("sassToCss", function(){
   return gulp.src("./src/sass/**/*.scss") //** - wszsytkie pliki z podfolderow sass z rozszerzenie .scss
-    .pipe(sass({ outputStyle: "compressed" }))
+    .pipe(sass({ outputStyle: "compact" })) //compressed
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer(
+      {
+        overrideBrowserslist: ['last 2 versions'],
+        cascade: false
+    }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest("./dist/css"));
 });
 
