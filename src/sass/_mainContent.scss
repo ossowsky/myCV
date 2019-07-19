@@ -26,5 +26,13 @@
     &__list {
       @include reset-ul();    
     }
+
+    &__article {
+      line-height: 23px;
+    }
+
+    &__indent {
+      text-indent: 35px;
+    }
   }
 }
